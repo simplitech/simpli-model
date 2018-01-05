@@ -1,10 +1,12 @@
 package com.simpli.model
 
+import java.io.IOException
+
 /**
  *
  * @author gil
  */
-class RespException : RuntimeException {
+class RespException : IOException {
     var code: Int? = null
 
     constructor(text: String) : super(text) {}

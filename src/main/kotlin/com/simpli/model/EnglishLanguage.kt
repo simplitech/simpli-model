@@ -4,7 +4,7 @@ package com.simpli.model
  *
  * @author gil
  */
-class EnglishLanguage : LanguageHolder() {
+open class EnglishLanguage : LanguageHolder() {
 
     override fun language(): String {
         return "en-us"
