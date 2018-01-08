@@ -6,7 +6,7 @@ import java.io.IOException
  *
  * @author gil
  */
-class RespException : IOException {
+open class RespException : IOException {
     var code: Int? = null
 
     constructor(text: String) : super(text) {}
