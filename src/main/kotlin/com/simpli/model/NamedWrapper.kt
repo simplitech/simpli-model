@@ -2,9 +2,9 @@ package com.simpli.model
 
 import java.util.HashMap
 
-class NamedWrapper<T>(name: String, obj: T) : HashMap<String, T>() {
+class NamedWrapper<T>() : HashMap<String, T>() {
 
-    init {
+    constructor(name: String, obj: T): this() {
         put(name, obj)
     }
 
