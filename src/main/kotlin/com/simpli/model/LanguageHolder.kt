@@ -16,6 +16,7 @@ abstract open class LanguageHolder {
 
     abstract fun language(): String
     abstract fun cannotBeNull(propertyName: String): String
+    abstract fun cannotBeNegative(propertyName: String): String
     abstract fun lengthCannotBeMoreThan(propertyName: String, size: Int): String
     abstract fun unexpectedError(): String
     abstract fun invalidLogin(): String

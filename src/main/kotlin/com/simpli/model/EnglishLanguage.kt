@@ -11,11 +11,15 @@ open class EnglishLanguage : LanguageHolder() {
     }
 
     override fun cannotBeNull(propertyName: String): String {
-        return propertyName + " cannot be null"
+        return "$propertyName cannot be null"
+    }
+
+    override fun cannotBeNegative(propertyName: String): String {
+        return "$propertyName cannot be a negative number"
     }
 
     override fun lengthCannotBeMoreThan(propertyName: String, size: Int): String {
-        return propertyName + " length cannot be more than " + size
+        return "$propertyName length cannot be more than $size"
     }
 
     override fun unexpectedError(): String {
@@ -51,18 +55,18 @@ open class EnglishLanguage : LanguageHolder() {
     }
 
     override fun isNotAValidEmail(propertyName: String): String {
-        return propertyName + " is not a valid e-mail"
+        return "$propertyName is not a valid e-mail"
     }
 
     override fun isNotAValidCPF(propertyName: String): String {
-        return propertyName + " is not a valid CPF"
+        return "$propertyName is not a valid CPF"
     }
 
     override fun isNotAValidCNPJ(propertyName: String): String {
-        return propertyName + " is not a valid CNPJ"
+        return "$propertyName is not a valid CNPJ"
     }
 
     override fun alreadyExist(propertyName: String): String {
-        return "There is already an entry with the same " + propertyName
+        return "There is already an entry with the same $propertyName"
     }
 }
