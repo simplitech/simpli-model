@@ -6,16 +6,17 @@ import java.util.HashMap
  *
  * @author gil
  */
-abstract class LanguageHolder {
+abstract open class LanguageHolder {
 
     protected var dictionary: Map<String, String> = HashMap()
 
-    operator fun get(o: String): String? {
-        return dictionary[o]
+    operator fun get(o: String): String {
+        return dictionary[o] ?: o
     }
 
     abstract fun language(): String
     abstract fun cannotBeNull(propertyName: String): String
+    abstract fun cannotBeNegative(propertyName: String): String
     abstract fun lengthCannotBeMoreThan(propertyName: String, size: Int): String
     abstract fun unexpectedError(): String
     abstract fun invalidLogin(): String

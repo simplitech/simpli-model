@@ -4,14 +4,18 @@ package com.simpli.model
  *
  * @author gil
  */
-class PortugueseLanguage : LanguageHolder() {
+open class PortugueseLanguage : LanguageHolder() {
 
     override fun language(): String {
         return "pt-br"
     }
 
     override fun cannotBeNull(propertyName: String): String {
-        return propertyName + " não pode ser vazio"
+        return "$propertyName não pode ser vazio"
+    }
+
+    override fun cannotBeNegative(propertyName: String): String {
+        return "$propertyName não pode ser um número negativo"
     }
 
     override fun lengthCannotBeMoreThan(propertyName: String, size: Int): String {
@@ -51,15 +55,15 @@ class PortugueseLanguage : LanguageHolder() {
     }
 
     override fun isNotAValidEmail(propertyName: String): String {
-        return propertyName + " não é um e-mail válido"
+        return "$propertyName não é um e-mail válido"
     }
 
     override fun isNotAValidCPF(propertyName: String): String {
-        return propertyName + " não é um CPF válido"
+        return "$propertyName não é um CPF válido"
     }
 
     override fun isNotAValidCNPJ(propertyName: String): String {
-        return propertyName + " não é um CNPJ válido"
+        return "$propertyName não é um CNPJ válido"
     }
 
     override fun alreadyExist(propertyName: String): String {
