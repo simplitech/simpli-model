@@ -20,6 +20,7 @@ abstract open class LanguageHolder {
     abstract fun lengthCannotBeMoreThan(propertyName: String, size: Int): String
     abstract fun unexpectedError(): String
     abstract fun invalidLogin(): String
+    abstract fun emailNotFound(): String
     abstract fun pleaseLogin(): String
     abstract fun invalidEntry(): String
     abstract fun isNotAValidEmail(propertyName: String): String

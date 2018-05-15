@@ -30,6 +30,10 @@ open class PortugueseLanguage : LanguageHolder() {
         return "Login inválido"
     }
 
+    override fun emailNotFound(): String {
+        return "E-mail não encontrado"
+    }
+
     override fun pleaseLogin(): String {
         return "Por favor, faça login"
     }
