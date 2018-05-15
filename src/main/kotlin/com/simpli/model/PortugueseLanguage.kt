@@ -30,12 +30,20 @@ open class PortugueseLanguage : LanguageHolder() {
         return "Login inválido"
     }
 
+    override fun pleaseLogin(): String {
+        return "Por favor, faça login"
+    }
+
     override fun emailNotFound(): String {
         return "E-mail não encontrado"
     }
 
-    override fun pleaseLogin(): String {
-        return "Por favor, faça login"
+    override fun invalidToken(): String {
+        return "Token inválido"
+    }
+
+    override fun expiredToken(): String {
+        return "Token expirado"
     }
 
     override fun errorSendingTheEmail(): String {
