@@ -1,84 +1,84 @@
-package com.simpli.model
+package br.com.simpli.model
 
 /**
  *
  * @author gil
  */
-open class PortugueseLanguage : LanguageHolder() {
+open class EnglishLanguage : LanguageHolder() {
 
     override fun language(): String {
-        return "pt-br"
+        return "en-us"
     }
 
     override fun cannotBeNull(propertyName: String): String {
-        return "$propertyName não pode ser vazio"
+        return "$propertyName cannot be null"
     }
 
     override fun cannotBeNegative(propertyName: String): String {
-        return "$propertyName não pode ser um número negativo"
+        return "$propertyName cannot be a negative number"
     }
 
     override fun lengthCannotBeMoreThan(propertyName: String, size: Int): String {
-        return "$propertyName possui um limite de $size caracteres"
+        return "$propertyName length cannot be more than $size"
     }
 
     override fun unexpectedError(): String {
-        return "Erro inesperado, tente novamente mais tarde"
+        return "Unexpected Error. Please try again later"
     }
 
     override fun invalidLogin(): String {
-        return "Login inválido"
+        return "Invalid Login"
     }
 
     override fun pleaseLogin(): String {
-        return "Por favor, faça login"
+        return "Please Login"
     }
 
     override fun emailNotFound(): String {
-        return "E-mail não encontrado"
+        return "E-mail not found"
     }
 
     override fun invalidToken(): String {
-        return "Token inválido"
+        return "Invalid Token"
     }
 
     override fun expiredToken(): String {
-        return "Token expirado"
+        return "Expired Token"
     }
 
     override fun errorSendingTheEmail(): String {
-        return "Erro ao enviar o e-mail"
+        return "Error sending the e-mail"
     }
 
     override fun theImageIsTooBig(): String {
-        return "A imagem é muito grande"
+        return "The image is too big"
     }
 
     override fun errorExecutingTheFunctionInThreadPool(): String {
-        return "Erro executando a função na Thread Pool: "
+        return "Error executing the function in Thread Pool: "
     }
 
     override fun contactEmail(): String {
-        return "E-mail de contato"
+        return "Contact E-mail"
     }
 
     override fun invalidEntry(): String {
-        return "Entrada inválida"
+        return "Invalid Entry"
     }
 
     override fun isNotAValidEmail(propertyName: String): String {
-        return "$propertyName não é um e-mail válido"
+        return "$propertyName is not a valid e-mail"
     }
 
     override fun isNotAValidCPF(propertyName: String): String {
-        return "$propertyName não é um CPF válido"
+        return "$propertyName is not a valid CPF"
     }
 
     override fun isNotAValidCNPJ(propertyName: String): String {
-        return "$propertyName não é um CNPJ válido"
+        return "$propertyName is not a valid CNPJ"
     }
 
     override fun alreadyExist(propertyName: String): String {
-        return "Já existe uma entrada com $propertyName igual"
+        return "There is already an entry with the same $propertyName"
     }
 }

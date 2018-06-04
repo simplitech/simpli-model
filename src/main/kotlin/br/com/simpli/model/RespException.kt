@@ -1,4 +1,4 @@
-package com.simpli.model
+package br.com.simpli.model
 
 import java.io.IOException
 
