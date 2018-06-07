@@ -18,6 +18,11 @@
       <distribution>repo</distribution>
     </license>
   </licenses>
+  <scm>
+    <connection>scm:git:git://github.com/simplitech/simpli-model.git</connection>
+    <developerConnection>scm:git:ssh://github.com:simplitech/simpli-model.git</developerConnection>
+    <url>http://github.com/simplitech/simpli-model/tree/master</url>
+  </scm>
   <dependencies>
     <dependency>
       <groupId>org.jetbrains.kotlin</groupId>

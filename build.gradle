@@ -37,6 +37,11 @@ pom {
             artifactId 'oss-parent'
             version '9'
         }
+        scm {
+            connection 'scm:git:git://github.com/simplitech/simpli-model.git'
+            developerConnection 'scm:git:ssh://github.com:simplitech/simpli-model.git'
+            url 'http://github.com/simplitech/simpli-model/tree/master'
+        }
         inceptionYear '2018'
         licenses {
             license {
