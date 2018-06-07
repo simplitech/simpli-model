@@ -32,6 +32,11 @@ compileTestKotlin {
 
 pom {
     project {
+        parent {
+            groupId 'org.sonatype.oss'
+            artifactId 'oss-parent'
+            version '9'
+        }
         inceptionYear '2018'
         licenses {
             license {
