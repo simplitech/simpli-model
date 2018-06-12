@@ -6,7 +6,7 @@ import java.util.HashMap
  *
  * @author gil
  */
-abstract open class LanguageHolder {
+abstract class LanguageHolder {
 
     protected var dictionary: Map<String, String> = HashMap()
 
