@@ -5,3 +5,5 @@ simpli-model.iml
 out
 .DS_Store
 target
+gradle.properties
+key.gpg
